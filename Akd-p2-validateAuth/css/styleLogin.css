@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom,#4070f4,#1B326F);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+   width: 80%;
+   max-width: max-content;
+   margin: auto;
+   background-color: rgb(255, 255, 255);
+}
+
+.formLogin{
+    padding: 20px 50px ;
+}
+
+.field-span{
+    margin-bottom: 30px;
+    text-align: center;
+    color: #1a2537;
+}
+.field-span span{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+
+.field{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.field input{
+    font-size: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    width: 90%;
+}
+
+/* Elimina el color del input al autocompletar con recomendaciones */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: all 5000s ease-in-out 0s;
+    transition-property: background-color, color;
+}
+
+
+.field i{
+    color: #999;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.checkbox-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+
+}
+.checkbox-text .checkbox-content{
+    display: flex;
+    padding-bottom: 10px;
+}
+
+
+.checkbox-content input{
+    accent-color: #1a2537;
+    background-color: black;
+    margin-right: 5px;
+}
+
+.field-button{
+    max-width: max-content;
+    margin: auto;
+}
+
+input[type="submit"]{
+    border: none;
+    width: 150px;
+    color: white;
+    font-size: 15px;
+    background: #1a2537;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    color: #1a2537;
+    background-color: rgba(126, 115, 115, 0.5);
+    font-weight: bold;
+}
+
+.login-signup{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.text{
+    text-decoration: none;
+    color: #1a2537;
+    font-size: 15px;
+}
+
+a{
+    font-weight: bold;
+}
+
+a:hover{
+    color:rgba(126, 115, 115, 0.5);
+}
+
+
+
+
+
+

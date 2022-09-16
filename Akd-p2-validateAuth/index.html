@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Hoja de estilo -->
+    <link rel="stylesheet" href="css/styleLogin.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" id="formLogin" class="formLogin">
+            <div class="field-span">
+                <span class="title">Login</span>
+            </div>
+            <div class="field">
+                <i class="uil uil-envelope icon"></i>
+                <input type="text" id="email" class="email" name="email" placeholder="Email">
+            </div>
+            <div class="field">
+                <i class="uil uil-lock icon"></i>
+                <input type="password" id="password" class="password" name="password" placeholder="Password">
+            </div>
+            
+            <div class="checkbox-text">
+                <div class="checkbox-content">
+                    <input type="checkbox" id="logCheck">
+                    <label for="logCheck" class="text">Recuérdame</label>
+                </div>
+                
+                <a href="#" class="text">¿Olvidaste la constraseña?</a>
+            </div>
+
+            <div class="field-button">
+                <input type="submit" value="ACCEDER" onclick="authentication()">
+            </div>
+
+            <div class="login-signup">
+                <span class="text">No tienes una cuenta?
+                    <a href="registration.html" class="text signup-link">Registrate</a>
+                </span>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/validateLogin.js"></script>
+    <script src="js/createUser.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar usuario</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="css/styleRegist.css">
+
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="#" id="formRegist" class="formRegist" >
+            <div class="field-span">
+                <span class="title">Registration</span>
+            </div>
+            <div class="field">
+                <input type="text" id="name" class="name" name="name" placeholder="Nombre" autofocus>
+            </div>
+            <div class="field">
+                <input type="text" id="lastName" class="lastName" name="last-name" placeholder="Apellido" >
+            </div>
+            <div class="field">
+                <input type="text" id="email" class="email" name="email" placeholder="Email">
+            </div>
+            <div class="field">
+                <input type="text" id="phone" class="phone" name="phone" placeholder="Teléfono">
+            </div>
+            <div class="field">
+                <input type="password" id="password" class="password" name="password" placeholder="Password">
+            </div>
+            <div class="field">
+                <input type="password" id="confirmPassword" class="confirmPassword" name="confirm-password" placeholder="Confirm Password">
+            </div>
+            
+            <div class="checkbox-text">
+                <div class="checkbox-content">
+                    <input type="checkbox" id="termCon">
+                    <label for="termCon" class="text">Acepto terminos y condiciones</label>
+                </div>
+            </div>
+
+            <div class="field-button">
+                <input type="submit" value="REGISTRAR" onclick="registUser()">
+            </div>
+
+            <div class="login-signup">
+                <span class="text">Ya tienes cuenta?
+                    <a href="index.html" class="text signup-link">Iniciar Sesión</a>
+                </span>
+            </div>
+        </form>
+    </div>
+
+    <!-- Js -->
+    <script src="js/validateRegist.js"></script>
+    <script src="js/RegistUser.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom,#4070f4,#1B326F);
+}
+.container{
+   width: 100%;
+   max-width: max-content;
+   margin: auto;
+}
+
+.formRegist{
+    margin: 5px;
+    padding: 10px 50px ;
+    background-color: rgb(255, 255, 255);
+}
+
+.field-span{
+    margin-bottom: 30px;
+    text-align: center;
+    color: #1a2537;
+}
+.field-span span{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.field{
+    margin-bottom: 30px;
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.field input{
+    font-size: 17px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    width: 90%;
+
+}
+
+/* Elimina el color del input al autocompletar con recomendaciones */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: all 5000s ease-in-out 0s;
+    transition-property: background-color, color;
+}
+
+.checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.checkbox-content input{
+    accent-color: #1a2537;
+}
+
+.field-button{
+    max-width: max-content;
+    margin: auto;
+}
+
+input[type="submit"]{
+    border: none;
+    width: 150px;
+    color: white;
+    font-size: 15px;
+    background: #1a2537;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    color: #1a2537;
+    font-weight: bold;
+    background-color: rgba(126, 115, 115, 0.5);
+}
+
+.login-signup{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.text{
+    text-decoration: none;
+    color: #1a2537;
+    font-size: 16px;
+}
+
+a{
+    font-weight: bold;
+}
+
+a:hover{
+    color:rgba(126, 115, 115, 0.5);
+}
